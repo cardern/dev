@@ -1,0 +1,42 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+body{
+	background: url("../img/crt.png") no-repeat center center fixed;
+}
+
+.container{
+	width:100%;
+}
+
+.intro{
+	height:100vh;
+	vertical-align: center;
+}
+
+.about{
+
+}
+
+.experience{
+	background: $gray-lighter;
+}
+
+.portfolio{
+
+}
+
+.education{
+	background: $gray-lighter;
+}
+
+.contact{
+	background: $brand-success;
+	color:white;
+}
