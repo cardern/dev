@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -32,48 +32,149 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <button type="button" class="btn btn-default navbar-btn">button</button>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <button type="button" class="btn btn-default navbar-btn navbar-right" href="#contact">Contact Me</button>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-
-    <div class="container text-center intro">
-        <h1>Hello, I'm Sergay Brin.</h1>
-    </div>
-
-    <div class="container text-center about">
-        <h1>About</h1> 
-    </div>
-
-    <div class="container text-center experience">
-        <h1>Experience</h1>
-    </div>
-
-    <div class="container text-center portfolio">
-        <h1>Portfolio</h1>
-    </div>
-
-    <div class="container text-center education">
-        <h1>Education</h1>
-    </div>
-
-    <div class="container text-center contact">
-        <div class="col-md-6 col-md-offset-3">
-        <h1>Contact Me</h1>
-            <h4>I'd love to hear from you. For real, send me a message.</h4>
+    <div id="intro" class="container text-center">
+        <div class="col-md-12 crt vertical-center">
+            <h1 class="hello">Hello, I'm Bob Loblaw.</h1>
+            <h1 class="blinking">&nbsp|</h1>
         </div>
     </div>
+    <div id="about" class="container text-center padding">
+        <h1>About</h1>
+        <div class="spacer"></div>
+        <br>
+        <row>
+            <div class="col-md-6">
+                <img src="img/headshot.jpg" class="text-right margin-bottom responsive-img">
+            </div>
+            <div class="col-md-6 text-left">
+                <h4><p>The undulating common seemed now dark almost to blackness, except where its roadways lay grey and pale under the deep blue sky of the early night.  It was dark, and suddenly void of men.  Overhead the stars were mustering, and in the west the sky was still a pale, bright, almost greenish blue.  The tops of the pine trees and the roofs of Horsell came out sharp and black against the western afterglow.</p></h4>
+            </div>
+        </row>
+    </div>
+    <div id="experience" class="container text-center padding">
+        <h1>Experience</h1>
+        <div class="spacer"></div>
+        <row>
+            <div class="col-md-4 margin-bottom">
+                <h3>Company 1</h3>
+                <h4>Job Role</h4>
+                <p>Nothing was changed save for that and a terrible astonishment. The little group of black specks with the flag of white had been swept out of existence, and the stillness of the evening, so it seemed to me, had scarcely been broken.
+                </p>
+            </div>
+            <div class="col-md-4 margin-bottom">
+                <h3>Company 2</h3>
+                <h4>Job Role</h4>
+                <p>The fear I felt was no rational fear, but a panic terror not only of the Martians, but of the dusk and stillness all about me. Such an extraordinary effect in unmanning me it had that I ran weeping silently as a child might do. Once I had turned, I did not dare to look back.
+                </p>
+            </div>
+            <div class="col-md-4 margin-bottom">
+                <h3>Company 3</h3>
+                <h4>Job Role</h4>
+                <p>I remember I felt an extraordinary persuasion that I was being played with, that presently, when I was upon the very verge of safety, this mysterious death--as swift as the passage of light--would leap after me from the pit about the cylinder and strike me down.
+                </p>
+            </div>
+        </row>
+    </div>
+    <div id="projects" class="container text-center padding">
+        <h1>Projects</h1>
+        <div class="spacer"></div>
+        <row>
+            <div class="col-md-6">
+                <h3>Project 1</h3>
+            </div>
+            <div class="col-md-6">
+                <h3>Project 2</h3>
+            </div>
+        </row>
+        <row>
+            <div class="col-md-6">
+                <h3>Project 3</h3>
+            </div>
+            <div class="col-md-6">
+                <h3>Project 4</h3>
+            </div>
+        </row>
+        <row>
+            <div class="col-md-6">
+                <h3>Project 5</h3>
+            </div>
+            <div class="col-md-6">
+                <h3>Project 6</h3>
+            </div>
+        </row>
+    </div>
+    <div id="education" class="container text-center padding">
+        <h1>Education</h1>
+        <div class="spacer"></div>
+        <row>
+            <div class="col-md-4 col-md-offset-2 margin-bottom">
+                <h3>School 1</h3>
+                <h4>Degree - <b>Graduated</b>: 2015</h4>
+                <p>Nothing was changed save for that and a terrible astonishment. The little group of black specks with the flag of white had been swept out of existence, and the stillness of the evening, so it seemed to me, had scarcely been broken.
+                </p>
+            </div>
+            <div class="col-md-4 margin-bottom">
+                <h3>School 2</h3>
+                <h4>Degree - <b>Graduated</b>: 2011</h4>
+                <p>The fear I felt was no rational fear, but a panic terror not only of the Martians, but of the dusk and stillness all about me. Such an extraordinary effect in unmanning me it had that I ran weeping silently as a child might do. Once I had turned, I did not dare to look back.
+                </p>
+            </div>
+        </row>
+    </div>
+    <div id="contact" class="container text-center padding">
+        <h1>Contact Me</h1>
+        <div class="spacer-white"></div><br>
 
+        <row>
+            <div class="col-md-3 col-md-offset-3 vertical-center">
+                <h4>I'd love to hear from you. For real, send me a message.</h4>
+            </div>
+            <div class="col-md-3">
+                <form action="" method="POST" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <input type="name" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <form action="" method="POST" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <textarea type="message" class="form-control" id="inputMessage" placeholder="What's up?" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </row>
+        <row>
+        <div class="col-md-12">
+        <input class="btn btn-default btn-lg" type="submit" value="Send Now">
+        </div>
+        </row>
+
+        <div class="col-md-4 social-icons">
+            <a class="btn-twitter"></a>
+        </div>
+    </div>
     <!-- jQuery -->
     <script src="javascripts/jquery-1.11.2.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/application.js"></script>
+    <script src="javascripts/nav.js"></script>
 </body>
 
 </html>

@@ -1,42 +1,131 @@
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
-
 // Import custom Bootstrap variables
 @import "bootstrap-variables";
-
 // Import Bootstrap for Sass
 @import "bootstrap";
 
-body{
-	background: url("../img/crt.png") no-repeat center center fixed;
+h1 { 
+  position: relative;
 }
 
-.container{
-	width:100%;
+.container {
+    width: 100%;
 }
 
-.intro{
-	height:100vh;
-	vertical-align: center;
+.padding{
+	padding: 50px;
 }
 
-.about{
-
+.margin-bottom{
+	margin-bottom: 40px;
 }
 
-.experience{
-	background: $gray-lighter;
+.navbar-right{
+	margin-right:50px;
 }
 
-.portfolio{
-
+.navbar-nav > li.current {
+	border-bottom: 5px solid $brand-success;
 }
 
-.education{
-	background: $gray-lighter;
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.contact{
+.spacer{
+	width:100px;
+	height:2px;
 	background: $brand-success;
-	color:white;
+	margin:auto;
+}
+
+.spacer-white{
+	@extend .spacer;
+	background: white;
+}
+
+.responsive-img{
+	max-width: 100%;
+}
+
+//Intro section
+#intro {
+    background: $brand-success;
+}
+
+.hello {
+    color: white;
+    font-family: "Montserrat";
+}
+
+@media all and (max-width: 640px) {
+    .blinking {
+        visibility: hidden;
+    }
+}
+
+.blinking {
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@-webkit-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+
+@-ms-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+
+@-o-keyframes "blink" {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+
+.crt {
+	padding:0px;
+    height: 100vh;
+    background: url("../img/crt.png") no-repeat center;
+}
+
+//About section
+#about {
+    background: white;
+}
+
+#experience {
+    background: $gray-lighter;
+}
+
+#projects {
+    background: white;
+}
+
+#education {
+    background: $gray-lighter;
+}
+
+#contact {
+    background: $brand-success;
+    color: white;
 }
