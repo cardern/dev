@@ -8567,44 +8567,44 @@ button.close {
     display: none !important;
   }
 }
-/* line 8, ../sass/styles.scss */
+/* line 7, ../sass/styles.scss */
 h1 {
   position: relative;
 }
 
-/* line 12, ../sass/styles.scss */
+/* line 11, ../sass/styles.scss */
 .container {
   width: 100%;
 }
 
-/* line 16, ../sass/styles.scss */
+/* line 15, ../sass/styles.scss */
 .padding {
   padding: 50px;
 }
 
-/* line 20, ../sass/styles.scss */
+/* line 19, ../sass/styles.scss */
 .margin-bottom {
   margin-bottom: 40px;
 }
 
-/* line 24, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 .navbar-right {
   margin-right: 50px;
 }
 
-/* line 28, ../sass/styles.scss */
+/* line 27, ../sass/styles.scss */
 .navbar-nav > li.current {
   border-bottom: 5px solid #5cb85c;
 }
 
-/* line 32, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .vertical-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 38, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 .spacer, .spacer-white {
   width: 100px;
   height: 2px;
@@ -8612,34 +8612,40 @@ h1 {
   margin: auto;
 }
 
-/* line 45, ../sass/styles.scss */
-.spacer-white {
-  background: white;
-}
-
-/* line 50, ../sass/styles.scss */
+/* line 44, ../sass/styles.scss */
 .responsive-img {
   max-width: 100%;
 }
 
-/* line 55, ../sass/styles.scss */
+@media all and (min-width: 768px) {
+  /* line 49, ../sass/styles.scss */
+  #navbar-contact {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+}
+/* line 60, ../sass/styles.scss */
 #intro {
   background: #5cb85c;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 .hello {
   color: white;
   font-family: "Montserrat";
 }
 
 @media all and (max-width: 640px) {
-  /* line 65, ../sass/styles.scss */
+  /* line 70, ../sass/styles.scss */
   .blinking {
     visibility: hidden;
   }
 }
-/* line 70, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 .blinking {
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -8672,35 +8678,82 @@ h1 {
     color: white;
   }
 }
-/* line 105, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 .crt {
   padding: 0px;
   height: 100vh;
   background: url("../img/crt.png") no-repeat center;
 }
 
-/* line 112, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 #about {
   background: white;
 }
 
-/* line 116, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 #experience {
   background: #eeeeee;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 #projects {
   background: white;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 #education {
   background: #eeeeee;
 }
 
-/* line 128, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 #contact {
   background: #5cb85c;
   color: white;
+}
+
+/* line 139, ../sass/styles.scss */
+.spacer-white {
+  background: white;
+}
+
+/* line 144, ../sass/styles.scss */
+.email-button {
+  width: 150px;
+}
+
+/* line 148, ../sass/styles.scss */
+.send-now, .send-now:hover {
+  color: black;
+}
+
+/* line 152, ../sass/styles.scss */
+.send-now:hover {
+  text-decoration: none;
+}
+
+/* line 157, ../sass/styles.scss */
+.contact-message {
+  margin-top: 0;
+}
+
+/* line 161, ../sass/styles.scss */
+.btn-social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+/* line 172, ../sass/styles.scss */
+.btn-outline {
+  margin-top: 15px;
+  border: solid 2px #fff;
+  font-size: 20px;
+  color: #fff;
+  background: 0 0;
+  transition: all .3s ease-in-out;
 }

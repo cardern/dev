@@ -33,9 +33,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <button type="button" class="btn btn-default navbar-btn navbar-right" href="#contact">Contact Me</button>
-                </li>
+                <li><a id="navbar-contact" href="#contact">Contact Me</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -135,36 +133,36 @@
     </div>
     <div id="contact" class="container text-center padding">
         <h1>Contact Me</h1>
-        <div class="spacer-white"></div><br>
-
-        <row>
-            <div class="col-md-3 col-md-offset-3 vertical-center">
-                <h4>I'd love to hear from you. For real, send me a message.</h4>
-            </div>
-            <div class="col-md-3">
-                <form action="" method="POST" class="form-horizontal" role="form">
+        <div class="spacer-white"></div>
+        <br>
+        <form action="" method="POST" class="form-horizontal" id="contactForm" role="form">
+            <row>
+                <div class="col-xs-6 col-md-3 col-md-offset-3 vertical-center">
+                    <h4>I'd love to hear from you. For real, send me a message.</h4>
+                </div>
+                <div class="col-xs-6 col-md-3">
                     <div class="form-group">
                         <input type="name" class="form-control" id="inputName" placeholder="Name">
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
-                </form>
-            </div>
-            <div class="col-md-6 col-md-offset-3">
-                <form action="" method="POST" class="form-horizontal" role="form">
+                </div>
+                <div class="col-md-6 col-md-offset-3">
                     <div class="form-group">
                         <textarea type="message" class="form-control" id="inputMessage" placeholder="What's up?" rows="10"></textarea>
                     </div>
-                </form>
-            </div>
-        </row>
-        <row>
-        <div class="col-md-12">
-        <input class="btn btn-default btn-lg" type="submit" value="Send Now">
-        </div>
-        </row>
-
+                </div>
+            </row>
+            <row>
+                <div class="col-md-12">
+                    <div class="btn btn-default btn-lg send-now" type="submit">Send Now</div>
+                </div>
+                <div class="col-md-12">
+                    <div class="ajax-response"></div>
+                </div>
+            </row>
+        </form>
         <div class="col-md-4 social-icons">
             <a class="btn-twitter"></a>
         </div>

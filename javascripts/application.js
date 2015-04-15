@@ -5,11 +5,41 @@ $(document).ready(function() {
     $('.navbar-nav').onePageNav({
         currentClass: 'current',
         changeHash: false,
-        scrollSpeed: 500,
+        scrollSpeed: 400,
         scrollThreshold: 0.5,
-        filter: '',
+        filter: ':not(#navbar-contact)',
         easing: 'swing',
     });
+
+    //Email button press
+    function buttonMessage() {
+        var clicks = 0;
+        $('.send-now').on('click', function() {
+            switch (clicks) {
+                case 0:
+                    $('.send-now').html('Sent!');
+                    break;
+                case 1:
+                    $('.send-now').html('Sent again!');
+                    break;
+                case 2:
+                    $('.send-now').html('Sent a third time!');
+                    break;
+                case 3:
+                    $('.send-now').html('...');
+                    break;
+                case 4:
+                    $('.send-now').html('Seriously?');
+                    break;
+                case 5:
+                    $('.send-now').html('Stop it.');
+                    break;
+                default:
+                    $('.send-now').html('You are the worst.');
+            }
+            clicks++;
+        });
+    }
 
     // E-mail validation
 
@@ -20,40 +50,41 @@ $(document).ready(function() {
 
     // Contact form
 
-    $("#contact-form").submit(function(e) {
+    $(".send-now").on('click', function(e) {
 
         e.preventDefault();
 
-        var c_name = $("#c_name").val();
-        var c_email = $("#c_email").val();
-        var c_message = $("#c_message ").val();
+        var inputName = $("#inputName").val();
+        var inputEmail = $("#inputEmail").val();
+        var inputMessage = $("#inputMessage ").val();
         var responseMessage = $('.ajax-response');
 
-        if ((c_name == "" || c_email == "" || c_message == "") || (!isValidEmailAddress(c_email))) {
+        if ((inputName == "" || inputEmail == "" || inputMessage == "") || (!isValidEmailAddress(inputEmail))) {
             responseMessage.fadeIn(500);
-            responseMessage.html('<i class="fa fa-warning"></i> Check all fields.');
+            responseMessage.html('Check all fields.');
         } else {
+        	buttonMessage();
             $.ajax({
                 type: "POST",
                 url: "assets/php/contactForm.php",
                 dataType: 'json',
                 data: {
-                    c_email: c_email,
-                    c_name: c_name,
-                    c_message: c_message
+                    inputEmail: inputEmail,
+                    inputName: inputName,
+                    inputMessage: inputMessage
                 },
                 beforeSend: function(result) {
-                    $('#contact-form button').empty();
-                    $('#contact-form button').append('<i class="fa fa-cog fa-spin"></i> Wait...');
+                    $('#contactForm button').empty();
+                    $('#contactForm button').append('<i class="fa fa-cog fa-spin"></i> Wait...');
                 },
                 success: function(result) {
                     if (result.sendstatus == 1) {
                         responseMessage.html(result.message);
                         responseMessage.fadeIn(500);
-                        $('#contact-form').fadeOut(500);
+                        $('#contactForm').fadeOut(500);
                     } else {
-                        $('#contact-form button').empty();
-                        $('#contact-form button').append('<i class="fa fa-retweet"></i> Try again.');
+                        $('#contactForm .send-now').empty();
+                        $('#contactForm button').append('<i class="fa fa-retweet"></i> Try again.');
                         responseMessage.html(result.message);
                         responseMessage.fadeIn(1000);
                     }
