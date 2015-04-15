@@ -9,6 +9,7 @@
     <title>Hired: Resume/Portfolio</title>
     <!-- Bootstrap CSS -->
     <link href="stylesheets/styles.css" rel="stylesheet">
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +58,9 @@
                 <img src="img/headshot.jpg" class="text-right margin-bottom responsive-img">
             </div>
             <div class="col-md-6 text-left">
-                <h4><p>The undulating common seemed now dark almost to blackness, except where its roadways lay grey and pale under the deep blue sky of the early night.  It was dark, and suddenly void of men.  Overhead the stars were mustering, and in the west the sky was still a pale, bright, almost greenish blue.  The tops of the pine trees and the roofs of Horsell came out sharp and black against the western afterglow.</p></h4>
+                <h3>The undulating common seemed now dark almost to blackness.</h3>
+                <p>It was dark, and suddenly void of men. Overhead the stars were mustering, and in the west the sky was still a pale, bright, almost greenish blue. The tops of the pine trees and the roofs of Horsell came out sharp and black against the western afterglow.</p>
+                <p>Nothing was changed save for that and a terrible astonishment. The little group of black specks with the flag of white had been swept out of existence, and the stillness of the evening, so it seemed to me, had scarcely been broken.</p>
             </div>
         </row>
     </div>
@@ -135,37 +138,44 @@
         <h1>Contact Me</h1>
         <div class="spacer-white"></div>
         <br>
-        <form action="" method="POST" class="form-horizontal" id="contactForm" role="form">
-            <row>
-                <div class="col-xs-6 col-md-3 col-md-offset-3 vertical-center">
-                    <h4>I'd love to hear from you. For real, send me a message.</h4>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <div class="form-group">
-                        <input type="name" class="form-control" id="inputName" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
-                </div>
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="form-group">
-                        <textarea type="message" class="form-control" id="inputMessage" placeholder="What's up?" rows="10"></textarea>
-                    </div>
-                </div>
-            </row>
-            <row>
-                <div class="col-md-12">
-                    <div class="btn btn-default btn-lg send-now" type="submit">Send Now</div>
-                </div>
-                <div class="col-md-12">
-                    <div class="ajax-response"></div>
-                </div>
-            </row>
-        </form>
-        <div class="col-md-4 social-icons">
-            <a class="btn-twitter"></a>
-        </div>
+        <row>
+            <div class="col-xs-6 col-md-3 col-md-offset-3">
+                <h4 class="contact-message">I'd love to hear from you. For real, send me a message.</h4>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="btn btn-default btn-lg email-button"><a class='send-now'>Email Me</a></div>
+            </div>
+        </row>
+        <row>
+            <div class="col-xs-12 text-center">
+                <br>
+                <h4 class="email-address"></h4>
+            </div>
+        </row>
+        <row>
+            <div class="col-xs-12">
+                <div class="spacer-white"></div>
+            </div>
+        </row>
+        <row>
+            <div class="col-xs-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </row>
+    </div>
     </div>
     <!-- jQuery -->
     <script src="javascripts/jquery-1.11.2.min.js"></script>
