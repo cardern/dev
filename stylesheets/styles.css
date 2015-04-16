@@ -8567,44 +8567,44 @@ button.close {
     display: none !important;
   }
 }
-/* line 7, ../sass/styles.scss */
+/* line 10, ../sass/styles.scss */
 h1 {
   position: relative;
 }
 
-/* line 11, ../sass/styles.scss */
+/* line 14, ../sass/styles.scss */
 .container {
   width: 100%;
 }
 
-/* line 15, ../sass/styles.scss */
+/* line 18, ../sass/styles.scss */
 .padding {
   padding: 50px;
 }
 
-/* line 19, ../sass/styles.scss */
+/* line 22, ../sass/styles.scss */
 .margin-bottom {
   margin-bottom: 40px;
 }
 
-/* line 23, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 .navbar-right {
   margin-right: 50px;
 }
 
-/* line 27, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 .navbar-nav > li.current {
   border-bottom: 5px solid #5cb85c;
 }
 
-/* line 31, ../sass/styles.scss */
+/* line 34, ../sass/styles.scss */
 .vertical-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 37, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 .spacer, .spacer-white {
   width: 100px;
   height: 2px;
@@ -8612,13 +8612,13 @@ h1 {
   margin: auto;
 }
 
-/* line 44, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 .responsive-img {
   max-width: 100%;
 }
 
 @media all and (min-width: 768px) {
-  /* line 49, ../sass/styles.scss */
+  /* line 52, ../sass/styles.scss */
   #navbar-contact {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -8628,24 +8628,24 @@ h1 {
     margin-top: 10px;
   }
 }
-/* line 60, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 #intro {
   background: #5cb85c;
 }
 
-/* line 64, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .hello {
   color: white;
   font-family: "Montserrat";
 }
 
 @media all and (max-width: 640px) {
-  /* line 70, ../sass/styles.scss */
+  /* line 73, ../sass/styles.scss */
   .blinking {
     visibility: hidden;
   }
 }
-/* line 75, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 .blinking {
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -8654,6 +8654,30 @@ h1 {
   animation: 1s blink step-end infinite;
 }
 
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
 @-webkit-keyframes "blink" {
   from, to {
     color: transparent;
@@ -8678,29 +8702,29 @@ h1 {
     color: white;
   }
 }
-/* line 110, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 .crt {
   padding: 0px;
   height: 100vh;
   background: url("../img/crt.png") no-repeat center;
 }
 
-/* line 117, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 #about {
   background: white;
 }
 
-/* line 121, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 #experience {
   background: #eeeeee;
 }
 
-/* line 125, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 #projects {
   background: white;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 .project-box {
   background: #eeeeee;
   padding-bottom: 10px;
@@ -8708,32 +8732,33 @@ h1 {
   margin: 10px;
 }
 
-/* line 136, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 .project-spacer {
   height: 20px;
 }
 
-/* line 140, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .view-project {
   background: #5cb85c;
   width: 200px;
+  max-width: 100%;
   position: absolute;
   bottom: 10px;
   left: 20px;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 .view-project > a {
   color: white;
   font-size: 1.2em;
 }
 
-/* line 153, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 .view-project > a:hover {
   text-decoration: none;
 }
 
-/* line 157, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .project-img {
   height: auto;
   top: 30px;
@@ -8743,70 +8768,70 @@ h1 {
 }
 
 @media all and (max-width: 768px) {
-  /* line 166, ../sass/styles.scss */
+  /* line 179, ../sass/styles.scss */
   .project-img {
     visibility: hidden;
   }
 
-  /* line 169, ../sass/styles.scss */
+  /* line 182, ../sass/styles.scss */
   .project-box {
     height: auto;
   }
 
-  /* line 172, ../sass/styles.scss */
+  /* line 185, ../sass/styles.scss */
   .project-box > div h3 {
     padding-top: 15px;
   }
 
-  /* line 175, ../sass/styles.scss */
+  /* line 188, ../sass/styles.scss */
   .view-project {
     position: relative;
     margin-top: 20px;
   }
 }
 @media all and (max-width: 992px) {
-  /* line 182, ../sass/styles.scss */
+  /* line 195, ../sass/styles.scss */
   .project-img {
     max-width: 50%;
   }
 }
-/* line 187, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 #education {
   background: #eeeeee;
 }
 
-/* line 192, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 #contact {
   background: #5cb85c;
   color: white;
 }
 
-/* line 197, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .spacer-white {
   background: white;
 }
 
-/* line 202, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .email-button {
   width: 150px;
 }
 
-/* line 206, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .send-now, .send-now:hover {
   color: black;
 }
 
-/* line 210, ../sass/styles.scss */
+/* line 223, ../sass/styles.scss */
 .send-now:hover {
   text-decoration: none;
 }
 
-/* line 215, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .contact-message {
   margin-top: 0;
 }
 
-/* line 219, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .btn-social {
   display: inline-block;
   width: 50px;
@@ -8818,7 +8843,7 @@ h1 {
   line-height: 45px;
 }
 
-/* line 230, ../sass/styles.scss */
+/* line 243, ../sass/styles.scss */
 .btn-outline {
   margin-top: 15px;
   border: solid 2px #fff;

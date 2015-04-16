@@ -4,6 +4,9 @@
 @import "bootstrap-variables";
 // Import Bootstrap for Sass
 @import "bootstrap";
+//Keyframes
+@import "compass/css3/animation";
+
 h1 {
     position: relative;
 }
@@ -80,6 +83,15 @@ h1 {
     animation: 1s blink step-end infinite;
 }
 
+@include keyframes("blink") {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
+
 @-webkit-keyframes "blink" {
     from, to {
         color: transparent;
@@ -130,7 +142,7 @@ h1 {
     background: $gray-lighter;
     padding-bottom: 10px;
     height: 290px;
-    margin:10px;
+    margin: 10px;
 }
 
 .project-spacer {
@@ -140,6 +152,7 @@ h1 {
 .view-project {
     background: $brand-success;
     width: 200px;
+    max-width: 100%;
     position: absolute;
     bottom: 10px;
     left: 20px;
@@ -166,22 +179,22 @@ h1 {
     .project-img {
         visibility: hidden;
     }
-    .project-box{
-    	height: auto;
+    .project-box {
+        height: auto;
     }
-    .project-box > div h3{
-    	padding-top: 15px;
+    .project-box > div h3 {
+        padding-top: 15px;
     }
-    .view-project{
-    	position: relative;
-    	margin-top: 20px;
+    .view-project {
+        position: relative;
+        margin-top: 20px;
     }
 }
 
 @media all and (max-width: 992px) {
-	.project-img{
-		max-width: 50%;
-	}
+    .project-img {
+        max-width: 50%;
+    }
 }
 
 #education {
