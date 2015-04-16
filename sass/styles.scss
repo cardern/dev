@@ -126,6 +126,64 @@ h1 {
     background: white;
 }
 
+.project-box {
+    background: $gray-lighter;
+    padding-bottom: 10px;
+    height: 290px;
+    margin:10px;
+}
+
+.project-spacer {
+    height: 20px;
+}
+
+.view-project {
+    background: $brand-success;
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.view-project > a {
+    color: white;
+    font-size: 1.2em;
+}
+
+.view-project > a:hover {
+    text-decoration: none;
+}
+
+.project-img {
+    height: auto;
+    top: 30px;
+    right: 10px;
+    max-width: 80%;
+    position: absolute;
+}
+
+@media all and (max-width: 768px) {
+    .project-img {
+        visibility: hidden;
+    }
+    .project-box{
+    	height: auto;
+    }
+    .project-box > div h3{
+    	padding-top: 15px;
+    }
+    .view-project{
+    	position: relative;
+    	margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 992px) {
+	.project-img{
+		max-width: 50%;
+	}
+}
+
 #education {
     background: $gray-lighter;
 }

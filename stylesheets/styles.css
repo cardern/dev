@@ -8701,42 +8701,112 @@ h1 {
 }
 
 /* line 129, ../sass/styles.scss */
+.project-box {
+  background: #eeeeee;
+  padding-bottom: 10px;
+  height: 290px;
+  margin: 10px;
+}
+
+/* line 136, ../sass/styles.scss */
+.project-spacer {
+  height: 20px;
+}
+
+/* line 140, ../sass/styles.scss */
+.view-project {
+  background: #5cb85c;
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+/* line 148, ../sass/styles.scss */
+.view-project > a {
+  color: white;
+  font-size: 1.2em;
+}
+
+/* line 153, ../sass/styles.scss */
+.view-project > a:hover {
+  text-decoration: none;
+}
+
+/* line 157, ../sass/styles.scss */
+.project-img {
+  height: auto;
+  top: 30px;
+  right: 10px;
+  max-width: 80%;
+  position: absolute;
+}
+
+@media all and (max-width: 768px) {
+  /* line 166, ../sass/styles.scss */
+  .project-img {
+    visibility: hidden;
+  }
+
+  /* line 169, ../sass/styles.scss */
+  .project-box {
+    height: auto;
+  }
+
+  /* line 172, ../sass/styles.scss */
+  .project-box > div h3 {
+    padding-top: 15px;
+  }
+
+  /* line 175, ../sass/styles.scss */
+  .view-project {
+    position: relative;
+    margin-top: 20px;
+  }
+}
+@media all and (max-width: 992px) {
+  /* line 182, ../sass/styles.scss */
+  .project-img {
+    max-width: 50%;
+  }
+}
+/* line 187, ../sass/styles.scss */
 #education {
   background: #eeeeee;
 }
 
-/* line 134, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 #contact {
   background: #5cb85c;
   color: white;
 }
 
-/* line 139, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .spacer-white {
   background: white;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .email-button {
   width: 150px;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 .send-now, .send-now:hover {
   color: black;
 }
 
-/* line 152, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .send-now:hover {
   text-decoration: none;
 }
 
-/* line 157, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .contact-message {
   margin-top: 0;
 }
 
-/* line 161, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .btn-social {
   display: inline-block;
   width: 50px;
@@ -8748,7 +8818,7 @@ h1 {
   line-height: 45px;
 }
 
-/* line 172, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 .btn-outline {
   margin-top: 15px;
   border: solid 2px #fff;
