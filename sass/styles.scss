@@ -6,7 +6,8 @@
 @import "bootstrap";
 //Keyframes
 @import "compass/css3/animation";
-
+//Flexbox
+@import "compass/css3/flexbox";
 h1 {
     position: relative;
 }
@@ -32,9 +33,7 @@ h1 {
 }
 
 .vertical-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(( display: flex, align-items: center, justify-content: center));
 }
 
 .spacer {
@@ -152,7 +151,7 @@ h1 {
 .view-project {
     background: $brand-success;
     width: 200px;
-    max-width: 100%;
+    max-width: 80%;
     position: absolute;
     bottom: 10px;
     left: 20px;
