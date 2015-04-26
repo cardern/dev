@@ -59,69 +59,24 @@ h1 {
 }
 
 //Intro section
-#intro {
-    background: $brand-success;
-}
-
 .hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-family: "Montserrat";
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 150px;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
 }
 
-@media all and (max-width: 640px) {
-    .blinking {
-        visibility: hidden;
-    }
-}
-
-.blinking {
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-}
-
-@include keyframes("blink") {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
-}
-
-@-webkit-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
-}
-
-@-ms-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
-}
-
-@-o-keyframes "blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
-}
-
-.crt {
+.intro-bg {
     padding: 0px;
     height: 100vh;
-    background: url("../img/crt.png") no-repeat center;
+    background: url("../img/bg.jpg") no-repeat center;
 }
 
 //Main sections
@@ -168,6 +123,7 @@ h1 {
 
 .project-img {
     height: auto;
+    max-height: 250px;
     top: 30px;
     right: 10px;
     max-width: 80%;
