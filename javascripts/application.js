@@ -20,6 +20,7 @@ $(document).ready(function() {
 
 
 //Animations
+
     var width = $(window).width();
     $('.hello').offset({left:-width});
     $('.hello').animate({left:0}, 1000);
@@ -37,6 +38,9 @@ $(document).ready(function() {
         if(scrollBottom - $('#about').height() >= $('#about').position().top){
                 $('.responsive-img').animate({left:0}, 1000);
                 $('.about-text').animate({left:0}, 1000);
+                $('.skillbar').each(function(){
+                    $(this).find('.skillbar-bar').animate({width:$(this).attr('data-percent')},3000);
+    });
         }
 
         if(scrollBottom - $('#project-row-first').height() >= $('#project-row-first').position().top){
