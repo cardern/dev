@@ -34,6 +34,7 @@ body{
 
 .navbar-right {
     margin-right: 50px;
+    height:55px;
 }
 
 .navbar-nav > li.current {
@@ -61,7 +62,7 @@ body{
         border-radius: 0px;
         color: $brand-success;
         background-color: white;
-        padding: 5px 10px 5px 10px;
+        padding: 6px 10px 6px 10px;
         margin-right: 40px;
         margin-top: 10px;
     }

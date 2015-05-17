@@ -1,2 +1,0 @@
-# dev
-Personal site staging

@@ -8600,14 +8600,15 @@ body {
 /* line 35, ../sass/styles.scss */
 .navbar-right {
   margin-right: 50px;
+  height: 55px;
 }
 
-/* line 39, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 .navbar-nav > li.current {
   border-bottom: 5px solid #5cb85c;
 }
 
-/* line 43, ../sass/styles.scss */
+/* line 44, ../sass/styles.scss */
 .vertical-center {
   display: -webkit-flex;
   -webkit-align-items: center;
@@ -8617,7 +8618,7 @@ body {
   justify-content: center;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .spacer, .spacer-white {
   width: 100px;
   height: 2px;
@@ -8625,24 +8626,24 @@ body {
   margin: auto;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 55, ../sass/styles.scss */
 .responsive-img {
   max-width: 100%;
 }
 
 @media all and (min-width: 768px) {
-  /* line 59, ../sass/styles.scss */
+  /* line 60, ../sass/styles.scss */
   #navbar-contact {
     border: 2px solid #5cb85c;
     border-radius: 0px;
     color: #5cb85c;
     background-color: white;
-    padding: 5px 10px 5px 10px;
+    padding: 6px 10px 6px 10px;
     margin-right: 40px;
     margin-top: 10px;
   }
 }
-/* line 71, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .hello {
   top: 40vh;
   color: white;
@@ -8655,22 +8656,22 @@ body {
   border-radius: 100px / 50px;
 }
 
-/* line 83, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 #intro {
   height: 100vh;
 }
 
-/* line 88, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 #about {
   background: white;
 }
 
-/* line 92, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 #experience {
   background: white;
 }
 
-/* line 96, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .project-box {
   background: #eeeeee;
   padding-bottom: 10px;
@@ -8678,12 +8679,12 @@ body {
   margin: 10px;
 }
 
-/* line 103, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .project-spacer {
   height: 20px;
 }
 
-/* line 107, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .view-project {
   background: none;
   border: 2px solid #5cb85c;
@@ -8697,22 +8698,22 @@ body {
   font-size: 16px;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 .view-project:hover {
   font-size: 18px;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 .view-project > a {
   color: #5cb85c;
 }
 
-/* line 128, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .view-project > a:hover {
   text-decoration: none;
 }
 
-/* line 132, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 .project-img {
   height: auto;
   max-height: 250px;
@@ -8724,44 +8725,44 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  /* line 143, ../sass/styles.scss */
+  /* line 144, ../sass/styles.scss */
   .project-img {
     visibility: hidden;
   }
 
-  /* line 146, ../sass/styles.scss */
+  /* line 147, ../sass/styles.scss */
   .project-box {
     height: auto;
   }
 
-  /* line 149, ../sass/styles.scss */
+  /* line 150, ../sass/styles.scss */
   .project-box > div h3 {
     padding-top: 15px;
   }
 
-  /* line 152, ../sass/styles.scss */
+  /* line 153, ../sass/styles.scss */
   .view-project {
     position: relative;
     margin-top: 20px;
   }
 }
 @media all and (max-width: 992px) {
-  /* line 159, ../sass/styles.scss */
+  /* line 160, ../sass/styles.scss */
   .project-img {
     max-width: 50%;
   }
 }
-/* line 165, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 #contact {
   background: #5cb85c;
 }
 
-/* line 169, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .spacer-white {
   background: white;
 }
 
-/* line 174, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .email-button {
   width: 150px;
   height: 50px;
@@ -8770,29 +8771,29 @@ body {
   background: none;
 }
 
-/* line 182, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .email-button:hover {
   background: none;
   border: 2px solid white;
 }
 
-/* line 187, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .send-now, .send-now:hover {
   color: white;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .send-now:hover {
   text-decoration: none;
   font-size: 20px;
 }
 
-/* line 197, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 .contact-message {
   margin-top: 0;
 }
 
-/* line 201, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .btn-social {
   display: inline-block;
   width: 50px;
@@ -8804,7 +8805,7 @@ body {
   line-height: 45px;
 }
 
-/* line 212, ../sass/styles.scss */
+/* line 213, ../sass/styles.scss */
 .btn-outline {
   margin-top: 15px;
   border: solid 2px #fff;
@@ -8814,7 +8815,7 @@ body {
   transition: all .3s ease-in-out;
 }
 
-/* line 223, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 .skillbar {
   position: relative;
   display: block;
@@ -8837,7 +8838,7 @@ body {
   transition-property: width, background-color;
 }
 
-/* line 245, ../sass/styles.scss */
+/* line 246, ../sass/styles.scss */
 .skillbar-title {
   background: #5cb85c;
   position: absolute;
@@ -8855,7 +8856,7 @@ body {
   border-bottom-left-radius: 3px;
 }
 
-/* line 262, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .skillbar-title span {
   display: block;
   background: rgba(0, 0, 0, 0.1);
@@ -8870,7 +8871,7 @@ body {
   border-bottom-left-radius: 3px;
 }
 
-/* line 276, ../sass/styles.scss */
+/* line 277, ../sass/styles.scss */
 .skillbar-bar {
   background: #8ccd8c;
   height: 35px;
@@ -8880,7 +8881,7 @@ body {
   -webkit-border-radius: 3px;
 }
 
-/* line 285, ../sass/styles.scss */
+/* line 286, ../sass/styles.scss */
 .skill-bar-percent {
   position: absolute;
   right: 10px;
